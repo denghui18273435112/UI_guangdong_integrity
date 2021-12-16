@@ -1,0 +1,11 @@
+[ {
+  "uid" : "3b2f59e4191a4d1a",
+  "name" : "test_overview_digital",
+  "time" : {
+    "start" : 1639580278498,
+    "stop" : 1639580289102,
+    "duration" : 10604
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

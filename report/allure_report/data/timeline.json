@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "SZPC065",
+    "children" : [ {
+      "name" : "14040-MainThread",
+      "children" : [ {
+        "name" : "test_overview_digital",
+        "uid" : "3b2f59e4191a4d1a",
+        "parentUid" : "e925b640c74f9da04353ac09040db1d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639580278498,
+          "stop" : 1639580289102,
+          "duration" : 10604
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e925b640c74f9da04353ac09040db1d7"
+    } ],
+    "uid" : "c6f266818e14d7fa60afa267f67f2dc4"
+  } ]
+}

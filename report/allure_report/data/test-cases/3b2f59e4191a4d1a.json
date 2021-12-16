@@ -1,0 +1,125 @@
+{
+  "uid" : "3b2f59e4191a4d1a",
+  "name" : "test_overview_digital",
+  "fullName" : "testcase.test_all.Test_all#test_overview_digital",
+  "historyId" : "528cff84edd7bd63ec6526c8127bfb54",
+  "time" : {
+    "start" : 1639580278498,
+    "stop" : 1639580289102,
+    "duration" : 10604
+  },
+  "description" : "<font color='red'>当前执行时间: </font> 2021-12-15 22:58:09<Br/><font color='red'>用例编号（test_id）: </font> test_overview_digital_001<Br/><font color='red'>模块（module）: </font>01 首页-数字概览<Br/><font color='red'>标题_名称（name）: </font>验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确<Br/><font color='red'>优先级（priority）: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/Home<Br/><font color='red' >前置条件（preposition）: </font>成功登录<Br/><font color='red' >预期结果（expected_result）: </font>相关数据计算正确<Br/><font color='red' >实际结果（actual_result）: </font>True<Br/><font color='red' >操作详情（assert_fail_hint）: </font>总已参训人数/总计划人数、总达标人数/总参训人数 数据相互计算出现错误<Br/><font color='red' >定位失败原因（location_fail_hint）: </font>定位过程中出现元素丢失。原因:<Br/><font color='red' >操作的数据（data）: </font>None<Br/>",
+  "descriptionHtml" : "<p><font color='red'>当前执行时间: </font> 2021-12-15 22:58:09<Br/><font color='red'>用例编号（test_id）: </font> test_overview_digital_001<Br/><font color='red'>模块（module）: </font>01 首页-数字概览<Br/><font color='red'>标题_名称（name）: </font>验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确<Br/><font color='red'>优先级（priority）: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/Home<Br/><font color='red' >前置条件（preposition）: </font>成功登录<Br/><font color='red' >预期结果（expected_result）: </font>相关数据计算正确<Br/><font color='red' >实际结果（actual_result）: </font>True<Br/><font color='red' >操作详情（assert_fail_hint）: </font>总已参训人数/总计划人数、总达标人数/总参训人数 数据相互计算出现错误<Br/><font color='red' >定位失败原因（location_fail_hint）: </font>定位过程中出现元素丢失。原因:<Br/><font color='red' >操作的数据（data）: </font>None<Br/></p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1639580253686,
+      "stop" : 1639580278497,
+      "duration" : 24811
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "<font color='red'>当前执行时间: </font> 2021-12-15 22:58:09<Br/><font color='red'>用例编号（test_id）: </font> test_overview_digital_001<Br/><font color='red'>模块（module）: </font>01 首页-数字概览<Br/><font color='red'>标题_名称（name）: </font>验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确<Br/><font color='red'>优先级（priority）: </font>高<Br/><font color='red' >URL: </font>https://platform.giiatop.com/cip/#/PracticeCMS/Home<Br/><font color='red' >前置条件（preposition）: </font>成功登录<Br/><font color='red' >预期结果（expected_result）: </font>相关数据计算正确<Br/><font color='red' >实际结果（actual_result）: </font>True<Br/><font color='red' >操作详情（assert_fail_hint）: </font>总已参训人数/总计划人数、总达标人数/总参训人数 数据相互计算出现错误<Br/><font color='red' >定位失败原因（location_fail_hint）: </font>定位过程中出现元素丢失。原因:<Br/><font color='red' >操作的数据（data）: </font>None<Br/>",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "eb1fdb5cfc8f6309",
+      "name" : "截图20211215225809",
+      "source" : "eb1fdb5cfc8f6309.png",
+      "type" : "image/png",
+      "size" : 130401
+    }, {
+      "uid" : "de692129905585cc",
+      "name" : "操作的数据",
+      "source" : "de692129905585cc.html",
+      "type" : "text/html",
+      "size" : 59
+    }, {
+      "uid" : "a8297c987f971892",
+      "name" : "log",
+      "source" : "a8297c987f971892.txt",
+      "type" : "text/plain",
+      "size" : 227
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "driver::0",
+    "time" : {
+      "start" : 1639580289102,
+      "stop" : 1639580291229,
+      "duration" : 2127
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "01 首页-数字概览"
+  }, {
+    "name" : "story",
+    "value" : "验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确"
+  }, {
+    "name" : "tag",
+    "value" : "test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_all"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_all"
+  }, {
+    "name" : "host",
+    "value" : "SZPC065"
+  }, {
+    "name" : "thread",
+    "value" : "14040-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_all"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "test" ]
+  },
+  "source" : "3b2f59e4191a4d1a.json",
+  "parameterValues" : [ ]
+}

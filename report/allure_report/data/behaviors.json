@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "01 首页-数字概览",
+    "children" : [ {
+      "name" : "验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确",
+      "children" : [ {
+        "name" : "test_overview_digital",
+        "uid" : "3b2f59e4191a4d1a",
+        "parentUid" : "33d4d8b12ec73da181d97cebd7396842",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639580278498,
+          "stop" : 1639580289102,
+          "duration" : 10604
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "33d4d8b12ec73da181d97cebd7396842"
+    } ],
+    "uid" : "d0175998cec01851ac67449992cf8592"
+  } ]
+}
