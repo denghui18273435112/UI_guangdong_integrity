@@ -3,15 +3,141 @@ from tools.Allure import alluer
 from tools.logUtil import my_log
 from tools.selenium import selenium
 from config.fixed_options import *
+import json
+from config.path import *
 
 class all:
     def __init__(self,driver,Data):
-        self.new_driver = driver
         self.driver = selenium(driver)
-        self.data = Data["data"]
-        self.Data = Data
-        self.driver.url_skip(self.Data["URL"])
-        my_log().debug("["+self.Data["test_id"]+"--"+self.Data["module"]+"--"+self.Data["name"]+"]")
+        self.data = json.loads(Data["data"])
+        self.ExcelData = Data
+        self.driver.url_skip(self.ExcelData["URL"])
+        my_log().debug("["+self.ExcelData["test_id"]+"--"+self.ExcelData["module"]+"--"+self.ExcelData["name"]+"]")
+        print("{} 运行中.....".format(self.ExcelData["test_id"]))
+
+    def OD_inquire(self):
+        """个人信息查询-单个查询"""
+        try:
+            self.driver.zzl_text_input(location="请输入姓名",content=self.data["name"],type="css_text",Enter=False)
+            self.driver.pull_down_choose(location1="div:nth-child(2) > div.el-select  span > i",location2=self.data["type"],type="xpath_starts_with")
+            self.driver.zzl_text_input(location="请输入证件号码",content=self.data["number"],type="css_text")
+            self.driver.click("div:nth-child(2)   div.el-table__fixed-right  tr:nth-child(1) > td:nth-child(17) svg",type="css")
+            self.driver.back()
+       #截图/校验部分/用于判断用例是否通过/定位不到抛异常
+        except Exception as error:
+            self.ExcelData["actual_result"] = self.ExcelData["location_fail_hint"]
+        self.driver.screenShots()
+        alluer(self.ExcelData)
+        print("{} 已结束.....".format(self.ExcelData["test_id"]))
+        return self.ExcelData["actual_result"]
+
+
+    def Batch_query_Reset(self):
+        """个人信息查询-批量查询、重置"""
+        try:
+            self.driver.click("div.condition div:nth-child(6)")
+            self.driver.text_input("div.container textarea", self.data["nameORnumber"])
+            self.driver.click("div.container div.footer span:nth-child(2)")
+       #截图/校验部分/用于判断用例是否通过/定位不到抛异常
+        except Exception as error:
+            self.ExcelData["actual_result"] = self.ExcelData["location_fail_hint"]
+        self.driver.screenShots()
+        alluer(self.ExcelData)
+        print("{} 已结束.....".format(self.ExcelData["test_id"]))
+        return self.ExcelData["actual_result"]
+
+
+    def import_query(self):
+        """导入批量查询"""
+        try:
+            self.driver.click("模板下载",type="contains_text")
+            self.driver.upload_inputType("div:nth-child(2) div > div:nth-child(8)  input",file_path_02)
+            self.driver.click("导出",type="contains_text")
+       #截图/校验部分/用于判断用例是否通过/定位不到抛异常
+        except Exception as error:
+            self.ExcelData["actual_result"] = self.ExcelData["location_fail_hint"]
+        self.driver.screenShots()
+        alluer(self.ExcelData)
+        print("{} 已结束.....".format(self.ExcelData["test_id"]))
+        return self.ExcelData["actual_result"]
+
+
+    def Default_condition_query(self):
+        """多模块默认条件查询"""
+        try:
+            if self.ExcelData["test_id"] == "test_Default_condition_query_01":
+                self.driver.click("div.condition-wrapper > div > div:nth-child(18)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_02":
+                self.driver.click("确定",type="starts-with")
+                self.driver.click("div > div.condition-wrapper > div > div:nth-child(9)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_03":
+                self.driver.click("查询",type="starts-with")
+                time.sleep(5)
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_05":
+                self.driver.click("div.top-tabs span:nth-child(2)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_09":
+                self.driver.click("div.top-tabs span:nth-child(1)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_10":
+                self.driver.click("div.top-tabs span:nth-child(2)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_11":
+                self.driver.click("div.top-tabs span:nth-child(3)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_12":
+                self.driver.click("div.top-tabs span:nth-child(4)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_17":
+                self.driver.click("div.top-tabs span:nth-child(1)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_18":
+                self.driver.click("div.top-tabs span:nth-child(2)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_20":
+                self.driver.click("div.top-tabs span:nth-child(1)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_21":
+                self.driver.click("div.top-tabs span:nth-child(2)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_22":
+                self.driver.click("div.top-tabs span:nth-child(3)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_23":
+                self.driver.click("div.top-tabs span:nth-child(1)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_24":
+                self.driver.click("div.top-tabs span:nth-child(2)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_25":
+                self.driver.click("div.top-tabs span:nth-child(1)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_26":
+                self.driver.click("div.top-tabs span:nth-child(2)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_28":
+                self.driver.click("div.top-tabs span:nth-child(1)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_29":
+                self.driver.click("div.top-tabs span:nth-child(2)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_30":
+                self.driver.click("div.top-tabs span:nth-child(1)")
+                #self.driver.click("div.condition-wrapper span.zzl-button.primary")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_31":
+                self.driver.click("div.top-tabs span:nth-child(2)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_32":
+                self.driver.click("div.top-tabs span:nth-child(3)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_33":
+                self.driver.click("div.top-tabs span:nth-child(4)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_36":
+                self.driver.click("div.top-tabs span:nth-child(1)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_37":
+                self.driver.click("div.top-tabs span:nth-child(2)")
+            elif self.ExcelData["test_id"] == "test_Default_condition_query_39":
+                pass
+            else:
+                self.driver.click("div.condition-wrapper span.zzl-button.primary")
+            time.sleep(3)
+       #截图/校验部分/用于判断用例是否通过/定位不到抛异常
+        except Exception as error:
+            self.ExcelData["actual_result"] = self.ExcelData["location_fail_hint"]
+        self.driver.screenShots()
+        alluer(self.ExcelData)
+        print("{} 已结束.....".format(self.ExcelData["test_id"]))
+        return self.ExcelData["actual_result"]
+
+
+
+
+
+
+
+
 
     def record_statistical_query_inquire(self):
         """培训记录统计模块-查询-操作"""
@@ -132,7 +258,7 @@ class all:
         alluer(self.Data)
         return self.Data["actual_result"]
 
-    def inquire(self):
+    def inquire_1(self):
         """培训学分查询模块-字段查询"""
         try:
             print("培训学分查询模块-字段查询 中....")

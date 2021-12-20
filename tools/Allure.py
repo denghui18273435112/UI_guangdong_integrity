@@ -31,7 +31,7 @@ def alluer(inData):
                     inData["module"],
                     inData["name"],
                     inData["priority"],
-                    Yaml_read("all.yaml","login")["new_url"]+inData["URL"],
+                    Yaml_read("all_data.yaml","login")["joint_url"]+inData["URL"],
                     inData["preposition"],
                     inData["expected_result"],
                     inData["actual_result"],

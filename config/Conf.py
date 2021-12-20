@@ -151,7 +151,7 @@ actual_result = "实际结果"
 
 
 if __name__ == '__main__':
-    #print(ConfigYaml().read_yaml("login.yaml","login"))
+    #print(ConfigYaml().read_yaml("all_data.yaml","login"))
     print(get_file_path())
 
 

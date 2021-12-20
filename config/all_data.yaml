@@ -1,0 +1,16 @@
+---
+#线上登录,所需
+login:
+  url: "https://platform.giiatop.com/sinc/#/Login"
+  login_contrast_url: "https://platform.giiatop.com/sinc/#/SincerityCMS/PersonInfoInquiry"
+  joint_url: "https://platform.giiatop.com/sinc/#/"
+  login_account: "PARS-SG001"
+  login_password: "PARS-SG001"
+
+#数据库连接信息
+database:
+  ip: "localhost"
+  account: "root"
+  password: "1Q3fkUaCQMC"
+  database: "zentao"
+  port: 3307

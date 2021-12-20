@@ -35,13 +35,14 @@ def driver():
     option.headless =True
     option.add_argument('window-size=1920x1080')
     driver = webdriver.Chrome(options=option)
-    login=Yaml_read("all.yaml","login")
+    driver.maximize_window()
+    login =Yaml_read("all_data.yaml","login")
     driver.get(login["url"])
     selenium(driver).input_text("请输入账号",login["login_account"])
-    selenium(driver).input_text("请输入密码",login["password"])
+    selenium(driver).input_text("请输入密码",login["login_password"])
     while True:
         #截图验证并设别；直到验证码正常位置
-        element =driver.find_element_by_css_selector('#app > div > div.container > div > div.form > form > div.el-form-item.verifycode.is-required > div > img')
+        element =driver.find_element_by_css_selector('div.LoginForm > form  div > img')
         left = int(element.location['x'])
         top = int(element.location['y'])
         right = int(element.location['x'] + element.size['width'])
@@ -54,10 +55,9 @@ def driver():
         print("\n识别的验证码:{}\n".format(verification_code()))
         selenium(driver).input_text("请输入验证码",verification_code())
         selenium(driver).click("span.login-button")
-        if selenium(driver).get_url() ==login["login_pass_url"]:
+        if selenium(driver).get_url() ==login["login_contrast_url"]:
             break
-        driver.find_element_by_css_selector('#app > div > div.container > div > div.form > form > div.el-form-item.verifycode.is-required > div > img').click()
+        driver.find_element_by_css_selector('div.LoginForm > form  div > img').click()
     print("登录成功的cookies信息:{}\n".format(driver.get_cookies()))
-    #time.sleep(10)
     yield driver
     driver.quit()

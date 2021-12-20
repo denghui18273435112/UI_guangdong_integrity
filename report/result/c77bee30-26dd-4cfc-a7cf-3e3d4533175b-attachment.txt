@@ -1,1 +1,0 @@
-DEBUG    G:\pycharm\script\UI_guangdong\tools\logUtil.py:all.py:14 [test_overview_digital_001--01 首页-数字概览--验证 总已参训人数/总计划人数相关字段、总达标人数/总参训人数  是否计算正确]

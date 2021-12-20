@@ -1,5 +1,25 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '通过' == '定位失败原因'\n  - 通过\n  + 定位失败原因",
+      "children" : [ {
+        "name" : "test_Default_condition_query[Data29]",
+        "uid" : "cb40976835c8283e",
+        "parentUid" : "4eb4c9016c2b37affea441eddbcfd819",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639981020432,
+          "stop" : 1639981022882,
+          "duration" : 2450
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_30', 'module': '02 默认条件查询', 'name': '30 诚信记录生效清单-诚信记录查询', 'priority': '高', 'URL': 'SincerityCMS/IntegrityRecordsEffectiveList', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      } ],
+      "uid" : "4eb4c9016c2b37affea441eddbcfd819"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

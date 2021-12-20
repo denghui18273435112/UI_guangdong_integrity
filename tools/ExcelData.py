@@ -8,7 +8,7 @@ def ExcelData(beginColumn=None):
     :return: 返回的数据格式字典
     """
     _data=[]
-    workbook = xlrd.open_workbook(file_path_01,formatting_info=True)
+    workbook = xlrd.open_workbook(file_path_01)
     sheets = workbook.sheet_names()
     for i in range(workbook.nsheets):
         sheet = workbook.sheet_by_name(sheets[i])
@@ -23,7 +23,7 @@ def ExcelData(beginColumn=None):
     return _data
 
 if __name__ == "__main__":
-    print(ExcelData("test_overview_digital_001")[0])
+    print(ExcelData("test_personal_information"))
 
 
 

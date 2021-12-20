@@ -45,7 +45,7 @@ class SendEmail:
 
 if __name__ == "__main__":
 
-    file = "F:\\6_山东--分类\\002 测试用例\\1、山东分类用例.xlsx"
+    file = "F:\\6_山东--分类\\002 测试用例\\1、广东诚信用例.xlsx"
     SendEmail("test",file=file).send_mail()
 
 

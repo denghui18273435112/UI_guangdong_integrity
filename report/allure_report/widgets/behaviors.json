@@ -1,15 +1,26 @@
 {
-  "total" : 1,
+  "total" : 2,
   "items" : [ {
-    "uid" : "d0175998cec01851ac67449992cf8592",
-    "name" : "01 首页-数字概览",
+    "uid" : "47fe965f03d26317f8defab2a42dca0c",
+    "name" : "02 默认条件查询",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 42,
+      "unknown" : 0,
+      "total" : 43
+    }
+  }, {
+    "uid" : "799d1c6d19a04334a6f8fda99ae6fef9",
+    "name" : "01 个信息查询",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 1
+      "total" : 6
     }
   } ]
 }

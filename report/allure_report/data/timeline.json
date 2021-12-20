@@ -4,21 +4,597 @@
   "children" : [ {
     "name" : "SZPC065",
     "children" : [ {
-      "name" : "14040-MainThread",
+      "name" : "11888-MainThread",
       "children" : [ {
-        "name" : "test_overview_digital",
-        "uid" : "3b2f59e4191a4d1a",
-        "parentUid" : "e925b640c74f9da04353ac09040db1d7",
+        "name" : "test_Default_condition_query[Data31]",
+        "uid" : "1806a444ff0ea634",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
         "status" : "passed",
         "time" : {
-          "start" : 1639580278498,
-          "stop" : 1639580289102,
-          "duration" : 10604
+          "start" : 1639981030488,
+          "stop" : 1639981036584,
+          "duration" : 6096
         },
         "flaky" : false,
-        "parameters" : [ ]
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_32', 'module': '02 默认条件查询', 'name': '32 诚信记录生效清单-多次获评同一级别人员', 'priority': '高', 'URL': 'SincerityCMS/IntegrityRecordsEffectiveList', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data41]",
+        "uid" : "bbd9414a91497572",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981085755,
+          "stop" : 1639981091050,
+          "duration" : 5295
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_42', 'module': '02 默认条件查询', 'name': '42 诚信级别查询次数', 'priority': '高', 'URL': 'SincerityCMS/NumberIntegrity', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data1]",
+        "uid" : "e3499e903681f3aa",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980856153,
+          "stop" : 1639980862625,
+          "duration" : 6472
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_02', 'module': '02 默认条件查询', 'name': '02 离职人员管理', 'priority': '高', 'URL': 'SincerityCMS/LeaversManage', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data10]",
+        "uid" : "ac6fd7ff54ad6032",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980912825,
+          "stop" : 1639980919081,
+          "duration" : 6256
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_11', 'module': '02 默认条件查询', 'name': '11 人员流动统计-离职人员去向统计', 'priority': '高', 'URL': 'SincerityCMS/PersonFlowStatisticsFrame', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data26]",
+        "uid" : "7f5cfca1e248f17b",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981003697,
+          "stop" : 1639981008998,
+          "duration" : 5301
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_27', 'module': '02 默认条件查询', 'name': '27 人员诚信级别分布', 'priority': '高', 'URL': 'SincerityCMS/StaffIntegrityLevelDistribution', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data4]",
+        "uid" : "c573158fbde413de",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980878380,
+          "stop" : 1639980884477,
+          "duration" : 6097
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_05', 'module': '02 默认条件查询', 'name': '05 培训记录状态-导入记录', 'priority': '高', 'URL': 'SincerityCMS/IntegrityRecordStatus', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data21]",
+        "uid" : "2df7bfe0994bca4a",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980974882,
+          "stop" : 1639980980827,
+          "duration" : 5945
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_22', 'module': '02 默认条件查询', 'name': '22 人员流动汇总统计-离入职人员对比汇总统计', 'priority': '高', 'URL': 'SincerityCMS/PersonFlowSummaryStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_OD_inquire[Data2]",
+        "uid" : "60b278e7e3de7610",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980821357,
+          "stop" : 1639980831136,
+          "duration" : 9779
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_OD_inquire_03', 'module': '01 个信息查询', 'name': '03 单个查询:离职-身份证', 'priority': '高', 'URL': 'SincerityCMS/PersonInfoInquiry', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"name\": \"周玉泉\",\\n \"type\": \"身份证\",\\n \"number\": \"362130197312312425\"\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data15]",
+        "uid" : "68b0f3031d32f34f",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980941492,
+          "stop" : 1639980946879,
+          "duration" : 5387
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_16', 'module': '02 默认条件查询', 'name': '16 在职/离职执业证查询', 'priority': '高', 'URL': 'SincerityCMS/LicenseInquiry', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data34]",
+        "uid" : "367d997fed06fa9d",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981048574,
+          "stop" : 1639981053930,
+          "duration" : 5356
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_35', 'module': '02 默认条件查询', 'name': '35 被解约人员查询', 'priority': '高', 'URL': 'SincerityCMS/CancelledPersonInquiry', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data9]",
+        "uid" : "355152973fd6ce68",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980906524,
+          "stop" : 1639980912819,
+          "duration" : 6295
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_10', 'module': '02 默认条件查询', 'name': '10 人员流动统计-入职人员来源统计', 'priority': '高', 'URL': 'SincerityCMS/PersonFlowStatisticsFrame', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data40]",
+        "uid" : "7386583a4f87ba4",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981080443,
+          "stop" : 1639981085749,
+          "duration" : 5306
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_41', 'module': '02 默认条件查询', 'name': '41 个人信息查询人次', 'priority': '高', 'URL': 'SincerityCMS/NumberPersonal', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data42]",
+        "uid" : "df0b4e67221f7f0a",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981091057,
+          "stop" : 1639981096336,
+          "duration" : 5279
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_43', 'module': '02 默认条件查询', 'name': '43 电子执业证使用次数', 'priority': '高', 'URL': 'SincerityCMS/NumberCertificate', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data13]",
+        "uid" : "d83bac83c55c53b",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980930760,
+          "stop" : 1639980936119,
+          "duration" : 5359
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_14', 'module': '02 默认条件查询', 'name': '14 在职人员查询', 'priority': '高', 'URL': 'SincerityCMS/OnJobPersonInquiry', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data19]",
+        "uid" : "dc483357f646e8d0",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980963597,
+          "stop" : 1639980968896,
+          "duration" : 5299
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_20', 'module': '02 默认条件查询', 'name': '20 人员流动汇总统计-离职人员去向汇总统计', 'priority': '高', 'URL': 'SincerityCMS/PersonFlowSummaryStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data32]",
+        "uid" : "5b467126b4df68e8",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981036590,
+          "stop" : 1639981042580,
+          "duration" : 5990
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_33', 'module': '02 默认条件查询', 'name': '33 诚信记录生效清单-连续12个月诚信行为', 'priority': '高', 'URL': 'SincerityCMS/IntegrityRecordsEffectiveList', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data35]",
+        "uid" : "3a470887afa16862",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981053935,
+          "stop" : 1639981059293,
+          "duration" : 5358
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_36', 'module': '02 默认条件查询', 'name': '36 被解约人员统计-汇总统计', 'priority': '高', 'URL': 'SincerityCMS/CancelledPersonStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_OD_inquire[Data1]",
+        "uid" : "bd4486d4fe66c6e1",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980811628,
+          "stop" : 1639980821352,
+          "duration" : 9724
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_OD_inquire_02', 'module': '01 个信息查询', 'name': '02 单个查询:在职-其他', 'priority': '高', 'URL': 'SincerityCMS/PersonInfoInquiry', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"name\": \"李巧华\",\\n \"type\": \"其他\",\\n \"number\": \"M30102575\"\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data27]",
+        "uid" : "5df950dfc3a378a3",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981009004,
+          "stop" : 1639981014367,
+          "duration" : 5363
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_28', 'module': '02 默认条件查询', 'name': '28 各类诚信行为统计-各类诚信行为汇总统计', 'priority': '高', 'URL': 'SincerityCMS/IntegrityBehaviorsStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data30]",
+        "uid" : "96f2b8b16d0dea5f",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981022947,
+          "stop" : 1639981030482,
+          "duration" : 7535
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_31', 'module': '02 默认条件查询', 'name': '31 诚信记录生效清单-造成经济损失人员', 'priority': '高', 'URL': 'SincerityCMS/IntegrityRecordsEffectiveList', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data3]",
+        "uid" : "c9ae0809ddac9c5f",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980872936,
+          "stop" : 1639980878374,
+          "duration" : 5438
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_04', 'module': '02 默认条件查询', 'name': '04 培训记录状态-诚信记录', 'priority': '高', 'URL': 'SincerityCMS/IntegrityRecordStatus', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data18]",
+        "uid" : "7efde7a04ab0ea43",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980958278,
+          "stop" : 1639980963592,
+          "duration" : 5314
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_19', 'module': '02 默认条件查询', 'name': '19 从业时长汇总统计', 'priority': '高', 'URL': 'SincerityCMS/PersonnelInfoInquiry/WorkingTimeSummaryStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data37]",
+        "uid" : "a9d60d0c210863e8",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981065554,
+          "stop" : 1639981070888,
+          "duration" : 5334
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_38', 'module': '02 默认条件查询', 'name': '38 逾期办理离职申诉管理', 'priority': '高', 'URL': 'SincerityCMS/OverdueAppealManage', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data22]",
+        "uid" : "a4ba1bb8f64a547e",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980980833,
+          "stop" : 1639980986330,
+          "duration" : 5497
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_23', 'module': '02 默认条件查询', 'name': '23 业务指标清单查询-', 'priority': '高', 'URL': 'SincerityCMS/BusinessIndicators', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data2]",
+        "uid" : "d62c7d91a7c7ce53",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980862630,
+          "stop" : 1639980872930,
+          "duration" : 10300
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_03', 'module': '02 默认条件查询', 'name': '03 执业证导入追踪', 'priority': '高', 'URL': 'SincerityCMS/LicenseImportTrack', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data39]",
+        "uid" : "6db41df38df91610",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981075157,
+          "stop" : 1639981080437,
+          "duration" : 5280
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_40', 'module': '02 默认条件查询', 'name': '40 账号登录次数', 'priority': '高', 'URL': 'SincerityCMS/NumberLogins', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data14]",
+        "uid" : "6a7621906e3dc495",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980936125,
+          "stop" : 1639980941486,
+          "duration" : 5361
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_15', 'module': '02 默认条件查询', 'name': '15 离职人员查询', 'priority': '高', 'URL': 'SincerityCMS/ResignPersonInquiry', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data38]",
+        "uid" : "f6e5f483936a3ba2",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981070895,
+          "stop" : 1639981075150,
+          "duration" : 4255
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_39', 'module': '02 默认条件查询', 'name': '39 逾期离职申诉统计', 'priority': '高', 'URL': 'SincerityCMS/OverdueAppealStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_OD_inquire[Data0]",
+        "uid" : "fd21f79277d06169",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980801803,
+          "stop" : 1639980811622,
+          "duration" : 9819
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_OD_inquire_01', 'module': '01 个信息查询', 'name': '01 单个查询:在职-身份证', 'priority': '高', 'URL': 'SincerityCMS/PersonInfoInquiry', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"name\": \"邓辉\",\\n \"type\": \"身份证\",\\n \"number\": \"431225199212061818\"\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data6]",
+        "uid" : "f168dc6e3424f4ea",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980890172,
+          "stop" : 1639980895513,
+          "duration" : 5341
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_07', 'module': '02 默认条件查询', 'name': '07 我的已处理未生效件', 'priority': '高', 'URL': 'SincerityCMS/MyProcessed', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data12]",
+        "uid" : "272313f3af95783",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980925350,
+          "stop" : 1639980930754,
+          "duration" : 5404
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_13', 'module': '02 默认条件查询', 'name': '13 入职人员查询', 'priority': '高', 'URL': 'SincerityCMS/EntryPersonInquiry', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data7]",
+        "uid" : "81ed4f45cb722b33",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980895518,
+          "stop" : 1639980900862,
+          "duration" : 5344
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_08', 'module': '02 默认条件查询', 'name': '08 我的已生效件', 'priority': '高', 'URL': 'SincerityCMS/MyEffected', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data16]",
+        "uid" : "92cc840a4b953053",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980946885,
+          "stop" : 1639980952211,
+          "duration" : 5326
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_17', 'module': '02 默认条件查询', 'name': '17 各类人数汇总统计-人员属性汇总统计', 'priority': '高', 'URL': 'SincerityCMS/SummaryStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data24]",
+        "uid" : "a5d331cf3f5363c6",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980992390,
+          "stop" : 1639980997663,
+          "duration" : 5273
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_25', 'module': '02 默认条件查询', 'name': '25 电子执业证统计', 'priority': '高', 'URL': 'SincerityCMS/LicenseStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data33]",
+        "uid" : "9ebee4bb9ebf5b54",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981042586,
+          "stop" : 1639981048568,
+          "duration" : 5982
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_34', 'module': '02 默认条件查询', 'name': '34 诚信记录生效清单-未达成执业培训要求', 'priority': '高', 'URL': 'SincerityCMS/IntegrityRecordsEffectiveList', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data11]",
+        "uid" : "382ea7d5fdf17e03",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980919086,
+          "stop" : 1639980925345,
+          "duration" : 6259
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_12', 'module': '02 默认条件查询', 'name': '12 人员流动统计-离入职人员对比统计', 'priority': '高', 'URL': 'SincerityCMS/PersonFlowStatisticsFrame', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data20]",
+        "uid" : "f94231d337ba80a4",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980968902,
+          "stop" : 1639980974877,
+          "duration" : 5975
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_21', 'module': '02 默认条件查询', 'name': '21 人员流动汇总统计-入职人员来源汇总统计', 'priority': '高', 'URL': 'SincerityCMS/PersonFlowSummaryStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_OD_inquire[Data3]",
+        "uid" : "96cf960653d6fa2",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980831142,
+          "stop" : 1639980840819,
+          "duration" : 9677
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_OD_inquire_04', 'module': '01 个信息查询', 'name': '04 单个查询:离职-其他', 'priority': '高', 'URL': 'SincerityCMS/PersonInfoInquiry', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"name\": \"徐子晴\",\\n \"type\": \"其他\",\\n \"number\": \"HO4983324\"\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data17]",
+        "uid" : "5ebc6e09e875a126",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980952216,
+          "stop" : 1639980958273,
+          "duration" : 6057
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_18', 'module': '02 默认条件查询', 'name': '18 各类人数汇总统计-人员属性统计', 'priority': '高', 'URL': 'SincerityCMS/SummaryStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Batch_query_Reset[Data0]",
+        "uid" : "2652162300275358",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980840825,
+          "stop" : 1639980845542,
+          "duration" : 4717
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Batch_query_Reset_01', 'module': '01 个信息查询', 'name': '05 批量查询:所有类型数据', 'priority': '高', 'URL': 'SincerityCMS/PersonInfoInquiry', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"431225199212061818 邓辉\\\\nM30102575 李巧华\\\\n362130197312312425 周玉泉\\\\nHO4983324 徐子晴\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data5]",
+        "uid" : "4760481bede35402",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980884482,
+          "stop" : 1639980890166,
+          "duration" : 5684
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_06', 'module': '02 默认条件查询', 'name': '06 我的待处理', 'priority': '高', 'URL': 'SincerityCMS/MyProcessing', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data25]",
+        "uid" : "ef0135c527570989",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980997669,
+          "stop" : 1639981003691,
+          "duration" : 6022
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_26', 'module': '02 默认条件查询', 'name': '26 电子执业证明细', 'priority': '高', 'URL': 'SincerityCMS/LicenseStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data8]",
+        "uid" : "eac036908fc909ac",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980900867,
+          "stop" : 1639980906518,
+          "duration" : 5651
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_09', 'module': '02 默认条件查询', 'name': '09 人员流动统计-人员流动统计', 'priority': '高', 'URL': 'SincerityCMS/PersonFlowStatisticsFrame', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data0]",
+        "uid" : "facbee2e7558fed0",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980850715,
+          "stop" : 1639980856147,
+          "duration" : 5432
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_01', 'module': '02 默认条件查询', 'name': '01 在职人员管理', 'priority': '高', 'URL': 'SincerityCMS/IncumbentManage', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data23]",
+        "uid" : "f9c77298f34aa385",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980986336,
+          "stop" : 1639980992385,
+          "duration" : 6049
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_24', 'module': '02 默认条件查询', 'name': '24 业务指标汇总查询', 'priority': '高', 'URL': 'SincerityCMS/BusinessIndicators', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data29]",
+        "uid" : "cb40976835c8283e",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "failed",
+        "time" : {
+          "start" : 1639981020432,
+          "stop" : 1639981022882,
+          "duration" : 2450
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_30', 'module': '02 默认条件查询', 'name': '30 诚信记录生效清单-诚信记录查询', 'priority': '高', 'URL': 'SincerityCMS/IntegrityRecordsEffectiveList', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data28]",
+        "uid" : "6094744ed7512a29",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981014372,
+          "stop" : 1639981020426,
+          "duration" : 6054
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_29', 'module': '02 默认条件查询', 'name': '29 各类诚信行为统计-各类诚信行为统计', 'priority': '高', 'URL': 'SincerityCMS/IntegrityBehaviorsStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_Default_condition_query[Data36]",
+        "uid" : "a5861264970887d9",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639981059312,
+          "stop" : 1639981065547,
+          "duration" : 6235
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_Default_condition_query_37', 'module': '02 默认条件查询', 'name': '37 被解约人员统计-被解约统计', 'priority': '高', 'URL': 'SincerityCMS/CancelledPersonStatistics', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '操作详情', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
+      }, {
+        "name" : "test_import_query[Data0]",
+        "uid" : "ca67995038c95710",
+        "parentUid" : "eb0b253ea388470b8bdcd59ad6206eda",
+        "status" : "passed",
+        "time" : {
+          "start" : 1639980845547,
+          "stop" : 1639980850710,
+          "duration" : 5163
+        },
+        "flaky" : false,
+        "parameters" : [ "{'test_id': 'test_import_query_02', 'module': '01 个信息查询', 'name': '06 导入查询', 'priority': '高', 'URL': 'SincerityCMS/PersonInfoInquiry', 'preposition': '前置', 'expected_result': '预期结果', 'actual_result': '通过', 'assert_fail_hint': '第一步：批量导入；第二步：导出数据；第三步：点击重置', 'location_fail_hint': '定位失败原因', 'data': '{\\n \"nameORnumber\": \"\"\\n\\n}'}" ]
       } ],
-      "uid" : "e925b640c74f9da04353ac09040db1d7"
+      "uid" : "eb0b253ea388470b8bdcd59ad6206eda"
     } ],
     "uid" : "c6f266818e14d7fa60afa267f67f2dc4"
   } ]

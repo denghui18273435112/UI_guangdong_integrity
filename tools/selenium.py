@@ -141,25 +141,21 @@ class selenium(object):
         :param location1:
         :param location2:
         :param type:
-        :return:
         """
-        #time.sleep(1)
-        self.driver.implicitly_wait(30)
         location1_new = self.driver.find_element_by_css_selector(location1)
         location1_new.click()
+        time.sleep(0.5)
         self.driver.implicitly_wait(30)
-        #time.sleep(1)
         if type == "CSS_CSS":
             location2_new = self.driver.find_element_by_css_selector(location2)
-        if type == "CSS_XPATH":
+        elif type == "CSS_XPATH":
             location2_new = self.driver.find_element_by_xpath(location2)
-        if type == "xpath_starts_with":
+        elif type == "xpath_starts_with":
             location2_new = self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location2))
-        if type == "xpath_contains_text":
+        elif type == "xpath_contains_text":
             location2_new = self.driver.find_element_by_xpath("//li/span[contains(text(),\"{}\")]".format(location2))
         location2_new.click()
-        time.sleep(1)
-        self.driver.implicitly_wait(30)
+
 
     def jietu(self,filePath):
         """
@@ -416,16 +412,9 @@ class selenium(object):
 
 
     def url_skip(self, name):
-        """
-        url跳转
-        @param name: 模块名称
-        @return:
-        """
-        login =Yaml_read("all.yaml","login")
-        time.sleep(0.5)
-        self.driver.get(login["new_url"]+name)
-        #time.sleep(2)
-
+        """url拼接跳转"""
+        login =Yaml_read("all_data.yaml","login")
+        self.driver.get(login["joint_url"]+name)
 
     def execute_script_new(self,shuxing,id,zhi):
         """
@@ -528,7 +517,7 @@ class selenium(object):
         elif ">" in location1 or "#" in location1:
             self.driver.find_element_by_css_selector(location1).click()
 
-    def click(self, location,type="xpath"):
+    def click(self, location,location1=2,type="css"):
         """
         点击操作  【常用之一】
         :param location: 定位 ；支持方式:xpthon、id、css
@@ -539,6 +528,10 @@ class selenium(object):
             element = self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location))
         elif type == "contains_text":
             element = self.driver.find_element_by_xpath("//*/span[contains(text(),\"{}\")]".format(location))
+        elif type == "figure":
+            element = self.driver.find_element_by_css_selector("div:nth-child(location1) > div.condition-wrapper  div:nth-child({0})".format(location1,location))
+        elif type == "css":
+            element = self.driver.find_element_by_css_selector(location)
         elif "/" in location or "//" in location or "*" in location:
             element = self.driver.find_element_by_xpath(location)
         elif '\u4e00' <= location <= '\u9fff' and type=="css":
@@ -573,7 +566,7 @@ class selenium(object):
         else:
                 self.driver.find_element_by_xpath(option_name).click()
 
-    def text_input(self,location,content,Enter=True,empty=True,type="xpath"):
+    def text_input(self,location,content,Enter=True,empty=True,type="css"):
         """
         文本输入
         :param location: 定位
@@ -614,16 +607,16 @@ class selenium(object):
         """
         return  str(datetime.now().strftime("%Y-%m-%d"))
 
-    def  upload_inputType(self, location, content="banner.png"):
+    def  upload_inputType(self, location, content):
         """
-        上传文件   【常用之一】
+        上传文件   【常用之一】 input 方式的文件上传;一般和标签同一级
         :param location: 位置
-        :param content:  文件的相对路径
-        :return:  input 方式的文件上传
-        """
-        self.driver.find_element_by_css_selector(location).send_keys(get_file_path()+os.sep+content)
+        :param content:  文件的绝对路径
 
-    def upload_noInputType(self, location, photo="banner.png"):
+        """
+        self.driver.find_element_by_css_selector(location).send_keys(content)
+
+    def upload_noInputType(self, location, photo):
         """
         上传文件  【常用之一】
         @param location1: 定位图片上传位置
@@ -637,7 +630,6 @@ class selenium(object):
             title = "打开"
         elif browser_type.lower() == "firefox":
             title = "文件上传"
-
         elif browser_type.lower() == "ie":
             title = "选择要加载的文件"
         else:
@@ -647,7 +639,7 @@ class selenium(object):
         comboBox = win32gui.FindWindowEx(ComboBoxEx32, 0, "ComboBox", None)   # 三级
         edit = win32gui.FindWindowEx(comboBox, 0, 'Edit', None)  # 四级
         button = win32gui.FindWindowEx(dialog, 0, 'Button', "打开(&O)")  # 二级
-        win32gui.SendMessage(edit, win32con.WM_SETTEXT, None, get_file_path()+os.sep+photo)  # 发送文件路径
+        win32gui.SendMessage(edit, win32con.WM_SETTEXT, None, photo)  # 发送文件路径
         win32gui.SendMessage(dialog, win32con.WM_COMMAND, 1, button)  # 点击打开按钮
         time.sleep(1)
 
@@ -733,7 +725,7 @@ class selenium(object):
         elif type == "xpath":
             text_frame = self.driver.find_element_by_xpath(location)
         elif type == "xpath_starts_with":
-            text_frame = self.driver.find_element_by_xpath("//*/span[starts-with(.,\"{}\")]".format(location))
+            text_frame = self.driver.find_element_by_xpath("//*/span[starts-with(.,'{}')]".format(location))
         elif type == "xpath_contains_text":
             text_frame = self.driver.find_element_by_xpath("//li/span[contains(text(),\"{}\")]".format(location))
         elif type == "css_text":
@@ -748,6 +740,8 @@ class selenium(object):
         if  Enter == True:
             text_frame.send_keys(Keys.ENTER)
         time.sleep(1)
+
+
 
     def zzl_click(self, location,type="xpath"):
         """
@@ -786,7 +780,7 @@ class selenium(object):
         if location!=None:
             dingwei = self.driver.find_element_by_css_selector(location)
         elif column!=None and row!=None:
-            dingwei = self.driver.find_element_by_css_selector("div.el-table__body-wrapper tbody>tr:nth-child({0})>td:nth-child({1})".format(row,column))
+            dingwei = self.driver.find_element_by_css_selector("div.el-table__body-wrapper tbody>tr:nth-child({0})>td:nth-child({1})>div".format(row,column))
         return dingwei.text
 
     def list_judgment(self,judge_data,list_position):

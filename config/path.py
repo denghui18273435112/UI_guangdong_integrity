@@ -18,6 +18,9 @@ allure_report_path = report_path+os.sep+"allure_report"
 guangdong_classify_path = testcase_path+os.sep+"guangdong_classify"
 xampp_path = testcase_path+os.sep+"xampp"
 photo_path = file_path+os.sep+"photo"
+import_file_path = docs_path+os.sep + "import"
 
 #文件路径
-file_path_01= docs_path+os.sep+"山东分类.xls"
+file_path_01= docs_path+os.sep+"广东诚信用例.xlsx"
+file_path_02= import_file_path+os.sep+"01入职前诚信级别批量查询模板.xlsx"
+
