@@ -106,8 +106,9 @@ class all:
             elif self.ExcelData["test_id"] == "test_Default_condition_query_29":
                 self.driver.click("div.top-tabs span:nth-child(2)")
             elif self.ExcelData["test_id"] == "test_Default_condition_query_30":
+                self.driver.resfresh()
                 self.driver.click("div.top-tabs span:nth-child(1)")
-                #self.driver.click("div.condition-wrapper span.zzl-button.primary")
+                self.driver.click("div.condition-wrapper span.zzl-button.primary")
             elif self.ExcelData["test_id"] == "test_Default_condition_query_31":
                 self.driver.click("div.top-tabs span:nth-child(2)")
             elif self.ExcelData["test_id"] == "test_Default_condition_query_32":
